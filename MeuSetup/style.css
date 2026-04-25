@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.fundo {
+    height: 600vh;
+
+    background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+    background-size: 600% 600%;
+
+    animation: animarFundo 3s ease infinite;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+@keyframes animarFundo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-size: 100px;
+    text-shadow: 0 0 10px #00f, 0 0 20px #0ff;
+}
+
+.conteudo {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.imagem {
+    width: 500px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    /* animação suave */
+
+    display: block;
+    margin-left: -50px;
+    /* joga pra esquerda */
+}
+
+.imagem:hover {
+    transform: translateY(-10px);
+    /* sobe */
+}
+
+.imgcomtexto {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    /* diminui esse 200px depois 👀 */
+
+}
+
+/* TEXTO */
+.texto {
+    font-family: Arial, sans-serif;
+    /* fonte limpa */
+    font-size: 18px;
+    line-height: 1.7;
+    color: white;
+    text-align: justify;
+    max-width: 800px;
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* CENTRALIZA NA PÁGINA */
+.container {
+    display: flex;
+    justify-content: center;
+    /* centro horizontal */
+}
+.btn-topo {
+    position:fixed; /* fica preso na tela */
+    bottom: 100px;    /* distância de baixo */
+    right: 1100px;     /* distância da direita */
+
+    padding: 35px 45px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 20px;
+
+    background: #ff0000;
+    color: white;
+
+    transition: 0.3s;
+}
+
+/* efeito quando passa o mouse */
+.btn-topo:hover {
+    transform: translateY(-5px);
+    background: #0f0c29;
+}
+
